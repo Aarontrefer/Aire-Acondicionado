@@ -29,8 +29,9 @@ public class AireAcondicionado{
         double maximo = temperatura + incremento;
         if(maximo <= max){
             temperatura += incremento;
+            cambioTemperaturas += 1;
         }
-        cambioTemperaturas += 1;
+        
         if(temperatura >= maxTemperaturaAlcanzada){
             maxTemperaturaAlcanzada = temperatura;
         }
@@ -40,8 +41,9 @@ public class AireAcondicionado{
         double minimo = temperatura - incremento;
         if(minimo >= min){
             temperatura -= incremento;
+            cambioTemperaturas += 1;
         }
-        cambioTemperaturas += 1;
+        
         if(temperatura <= minTemperaturaAlcanzada){
             minTemperaturaAlcanzada = temperatura;
         }
